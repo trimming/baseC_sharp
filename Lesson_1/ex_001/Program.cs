@@ -1,11 +1,11 @@
 ﻿Console.Clear();
-console.Write("Введите первое число для сравнения: ");
+Console.Write("Введите первое число для сравнения: ");
 int num1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число для сравнения: ");
 int num2 = int.Parse(Console.ReadLine());
 while( num1 == num2 ){
     Console.WriteLine("Вы ввели два одинаковых числа!");
-    console.write("Введите второе число для сравнения: ");
+    Console.Write("Введите второе число для сравнения: ");
     num2 = int.Parse(Console.ReadLine());
 }
 if(num1 > num2) 
