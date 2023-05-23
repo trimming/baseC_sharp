@@ -4,6 +4,7 @@
 // 32679 -> 6
 Console.Clear();
 int num = new Random().Next();
+
 Console.WriteLine(num);
 if (num < 100 && num > -100) {
     Console.WriteLine("третьей цифры нет");    
@@ -14,5 +15,5 @@ if (num < 100 && num > -100) {
         num1 = num1 / 10;
         count++;
     }
-    Console.WriteLine(num1 % 10);    
+    Console.WriteLine(Math.Abs(num1) % 10);    
 }
