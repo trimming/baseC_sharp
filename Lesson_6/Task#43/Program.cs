@@ -5,11 +5,11 @@ void CoordinateDotCrossing(double b1, double b2, double k1, double k2)
 {
     double x = b2 - b1 / k1 - k2;
     double y = k2 * x + b2;
-    Console.WriteLine($"Координаты точки пересечения: ({x:f2};{y:f2})");
+    Console.WriteLine($"Координаты точки пересечения: ({x:f2}; {y:f2})");
 }
 Console.Clear();
-double b1 = Convert.ToDouble(Console.ReadLine());
-double b2 = Convert.ToDouble(Console.ReadLine());
-double k1 = Convert.ToDouble(Console.ReadLine());
-double k2 = Convert.ToDouble(Console.ReadLine());
-CoordinateDotCrossing(b1, b2, k1, k2);
+double dotA = Convert.ToDouble(Console.ReadLine());
+double dotB = Convert.ToDouble(Console.ReadLine());
+double dotC = Convert.ToDouble(Console.ReadLine());
+double dotD = Convert.ToDouble(Console.ReadLine());
+CoordinateDotCrossing(dotA, dotB, dotC, dotD);
