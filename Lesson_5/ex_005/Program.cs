@@ -23,7 +23,8 @@ int[] GetMultEl(int[] array)
         multEl[size - 1] = array[array.Length / 2];
     }
     return multEl;
-} 
+}
+Console.Clear(); 
 int[] arr = CreateArray(7);
 int[] multElArray = GetMultEl(arr);
 Console.WriteLine($"Произведение пар чисел массива [{String.Join(", ", arr)}] -> [{String.Join(", ", multElArray)}]");
