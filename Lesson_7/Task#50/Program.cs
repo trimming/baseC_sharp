@@ -7,7 +7,7 @@
 // 17 -> такого числа в массиве нет
 using System;
 using static System.Console;
-int[,] GetArray(int m, int n, int minValue, int maxValue)
+int[,] GetArray(int m, int n, int minValue, int maxValue) 
 {
     int[,] result = new int[m, n];
     for (int i = 0; i < m; i++)
@@ -32,19 +32,19 @@ void PrintArray(int[,] inArray)
     }
 }
 
-int Prompt(string message)
+int Prompt(string message) 
 {
     Write(message);
     string value = ReadLine();
     return int.Parse(value);
 }
 
-bool CheckUserNumbers(int row, int column, int[,] array)
+bool CheckUserNumbers(int row, int column, int[,] array)  
 {
     return row < (array.GetLength(0) + 1) && column < (array.GetLength(1) + 1) && row > 0 && column > 0;
 }
 
-int FindItemArray(int row, int column, int[,] array)
+int FindItemArray(int row, int column, int[,] array) // Метод ищет значение по позиции строки и столбца со стороны пользователя
 {
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
