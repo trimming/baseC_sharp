@@ -49,5 +49,4 @@ double[] GetSum(int[,] inArray)
 Clear();
 int[,] collection = GetArray(3, 4, 1, 10);
 PrintArray(collection);
-GetSum(collection);
 WriteLine($"Среднее арифметическое каждого столбца: {String.Join("; ", GetSum(collection))}");
