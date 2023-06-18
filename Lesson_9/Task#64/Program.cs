@@ -14,7 +14,6 @@ string GetAllNaturalNum(int n)
 {
     if (n == 1)
     {
-
         return n.ToString();
     }
     string s = n.ToString() + ", " + GetAllNaturalNum(n - 1);
